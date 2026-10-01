@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Administración - ID Gallery</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div><h1>Panel de administración</h1><p>Solo el creador puede administrar el contenido.</p></div><a class="admin-link" href="index.html">Ver galería</a></header>
+<main><section id="loginBox" class="panel"><h2>Acceso del creador</h2><input id="email" type="email" placeholder="Correo del creador"><input id="password" type="password" placeholder="Contraseña"><button id="login">Entrar</button><p id="loginMsg"></p></section>
+<section id="adminBox" class="hidden"><div class="panel"><div class="row"><h2>Subir contenido</h2><button id="logout" class="secondary">Cerrar sesión</button></div>
+<input id="itemId" placeholder="ID (ej. 123456789)"><input id="name" placeholder="Nombre / descripción">
+<label>Imagen <input id="image" type="file" accept="image/png,image/jpeg,image/webp"></label>
+<button id="upload">Publicar</button><p id="msg"></p></div>
+<div class="panel"><h2>Contenido publicado</h2><div id="items"></div></div></section></main>
+<script type="module" src="admin.js"></script></body></html>
